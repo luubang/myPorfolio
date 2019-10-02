@@ -36,6 +36,57 @@
   background: #000;
 }
 
+.myProject{
+ display: block;
+ position: relative;
+  margin : 0;
+
+}
+.myProject img {
+  padding :0;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top : 0;
+  left: 0;
+  transition: all 1s;
+  padding : 0;
+  border-radius: 4px;
+}
+
+.overlay-item{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width : 20%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.overlay-item a:link , .overlay-item a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.overlay-item a:hover {
+  color: rgba(255, 255, 255, 0.308);
+}
+
+
+.myProject:hover .overlay{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.myProject:hover .overlay-item{
+  opacity: 1;
+}
+
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
