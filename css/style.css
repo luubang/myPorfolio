@@ -68,7 +68,12 @@
   opacity: 0;
   transition: all 1s;
 }
-
+@media screen and (max-width: 992px) {
+  .overlay-item{
+    width:50%;
+    font-size: 2rem;
+  }
+}
 .overlay-item a:link , .overlay-item a:visited {
   text-decoration: none;
   color: white;
